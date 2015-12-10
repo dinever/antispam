@@ -133,6 +133,7 @@ def score(msg):
         return detector.score(msg)
     else:
         detector = Detector()
+        setattr(module, 'obj', detector)
         return detector.score(msg)
 
 
