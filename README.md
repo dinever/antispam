@@ -25,13 +25,13 @@ import antispam
 antispam.score("Cheap shoes for sale at DSW shoe store!")
 # => 0.9657724517163143
 
-antispam.isspam("Cheap shoes for sale at DSW shoe store!")
+antispam.is_spam("Cheap shoes for sale at DSW shoe store!")
 # => True
 
 antispam.score("Hi mark could you please send me a copy of your machine learning homework? thanks")
 # => 0.0008064840568731558
 
-antispam.score("Hi mark could you please send me a copy of your machine learning homework? thanks")
+antispam.is_spam("Hi mark could you please send me a copy of your machine learning homework? thanks")
 # => False
 
 ```
