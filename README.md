@@ -17,9 +17,9 @@ pip install antispam
 
 # Usage
 
-Use the built-in training model provided by antispam:
+Use the built-in model provided & trained by author:
 
-```
+```python
 import antispam
 
 antispam.score("Cheap shoes for sale at DSW shoe store!")
@@ -36,9 +36,9 @@ antispam.score("Hi mark could you please send me a copy of your machine learning
 
 ```
 
-Train your own modle.
+Train your own modle:
 
-```
+```python
 import antispam
 
 d = antispam.Detector("my_model.dat")
@@ -59,6 +59,12 @@ d.score(msg2)
 
 d.is_spam(msg2)
 # => False
+```
+
+Save your model:
+
+```python
+d.save()
 ```
 
 ##License
