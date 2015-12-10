@@ -17,10 +17,12 @@ setup(
     version = __version__,
     keywords = ('spam', 'filter', 'antispam'),
 
+    packages = find_packages(),
     include_package_data = True,
 
-    py_modules = ["antispam"],
-    data_files=['model.dat'],
+    package_data = {
+        'antispam' : [ './antispam/model.dat' ]
+    },
     install_requires = [],
     author = "Dinever",
     author_email = 'dingpeixuan911@gmail.com',
