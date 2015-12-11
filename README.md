@@ -1,6 +1,5 @@
 # AntiSpam
 
-[![downloads](https://img.shields.io/pypi/dm/antispam.svg)](https://pypi.python.org/pypi/antispam/)
 [![version](https://img.shields.io/pypi/v/antispam.svg?label=version)](https://pypi.python.org/pypi/antispam/)
 [![supported](https://img.shields.io/pypi/pyversions/antispam.svg)](https://pypi.python.org/pypi/antispam/)
 [![license](https://img.shields.io/pypi/l/antispam.svg)](https://opensource.org/licenses/MIT)
