@@ -7,6 +7,7 @@
 Bayesian anti-spam classifier written in Python.
 
 PyPI: [pypi.python.org/pypi/antispam](https://pypi.python.org/pypi/antispam)
+Docs: [antispam.readthedocs.org](http://antispam.readthedocs.org)
 
 # Installation
 
