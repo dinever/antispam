@@ -163,7 +163,10 @@ class Detector(object):
             else:
                 rating = self.INIT_RATING
             ratings.append(rating)
-
+        
+        if (len(ratings) == 0):
+            return 0
+        
         if (len(ratings) > 20):
             ratings.sort()
             ratings = ratings[:10] + ratings[-10:]
