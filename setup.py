@@ -21,7 +21,7 @@ setup(
     include_package_data = True,
 
     package_data = {
-        'antispam' : [ './antispam/model.dat' ]
+        'antispam' : [ './antispam/model.json' ]
     },
     install_requires = [],
     author = "Dinever",
