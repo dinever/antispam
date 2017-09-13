@@ -81,7 +81,7 @@ class Model(object):
         with open(self.file_path, 'wb') as f:
             json.dump(
                 (self.spam_count_total, self.ham_count_total,
-                 self.token_table), f, -1)
+                 self.token_table), f)
 
 
 class Detector(object):
