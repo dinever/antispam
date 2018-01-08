@@ -1,2 +1,2 @@
-include LICENSE README.md *.dat *.py
-recursive-include antispam *.dat
+include LICENSE README.md *.json *.py
+recursive-include antispam *.json

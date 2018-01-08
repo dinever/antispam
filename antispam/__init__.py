@@ -23,21 +23,18 @@ from __future__ import print_function
 import re
 import os
 import sys
-try:
-    import cPickle as pickle
-except:
-    import pickle
+import json
 from functools import reduce
 
 __version__ = "0.0.10"
 
 
 class Model(object):
-    """Save & Load the model in/from the file system using Python's pickle
+    """Save & Load the model in/from the file system using Python's json
     module.
     """
     DEFAULT_DATA_PATH = os.path.join(
-        os.path.dirname(os.path.abspath(__file__)), "model.dat")
+        os.path.dirname(os.path.abspath(__file__)), "model.json")
 
     def __init__(self, file_path=None, create_new=False):
         """Constructs a Model object by the indicated ``file_path``, if the
@@ -74,17 +71,17 @@ class Model(object):
                 os.utime(file_path, None)
         with open(file_path, 'rb') as f:
             try:
-                return pickle.load(f)
+                return json.load(f)
             except:
                 return (0, 0, {})
 
     def save(self):
-        """Serialize the model using Python's pickle module, and save the
+        """Serialize the model using Python's json module, and save the
         serialized modle as a file which is indicated by ``self.file_path``."""
         with open(self.file_path, 'wb') as f:
-            pickle.dump(
+            json.dump(
                 (self.spam_count_total, self.ham_count_total,
-                 self.token_table), f, -1)
+                 self.token_table), f)
 
 
 class Detector(object):
